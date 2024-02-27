@@ -176,5 +176,36 @@ Copy code
 EXEC GetMountainsWithHighElevation;
 
 
+## Rance Blakney 
+
+ChatGPT Prompt for mock data: 
+I have 2 tables in my database 
+
+1. Payment 
+PaymentID (PK)
+UserID(FK to the User table)
+Amount 
+PaymentDate
+
+
+2. Mountain Ratings 
+MountainRatingID (PK)
+MountainID (FK to the mountain table)
+Rating (e.g 1-5)
+DateRated
+
+working in SQL server, 
+write me queries to fill both of these tables with mock data 
+
+
+CHatGPT Stored procedures prompt:
+1. Rate Mountain -->
+"Write me a stored procedure that would allow a user to enter a rate for a mountain"
+
+2. Payment information -->
+"Write me a stored procedure that shows the user payment details" 
+
+
+
 
 
