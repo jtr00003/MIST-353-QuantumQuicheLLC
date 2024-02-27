@@ -28,6 +28,7 @@ Quantum Quiche LLC has decided to merge together and continue a new idea togethe
 
 ## Dalton Knippel
 
+Prompt: 
 Working in SQL Server, write me a query to fill this table with mock data:
 
 ```sql
@@ -45,7 +46,6 @@ ChatGPT
 You can use the following SQL query to insert mock data into the Mountain table:
 
 sql
-Copy code
 -- Inserting mock data into Mountain table
 INSERT INTO [dbo].[Mountain] ([MountainID], [MountainName], [MountainLongitude], [MountainLatitude], [MountainElevationFT], [MountainRatings])
 VALUES 
@@ -57,7 +57,8 @@ VALUES
 ('6', 'Cho Oyu', '86.6608° E', '28.0942° N', '26,864 ft', '4.4/5');
 This query inserts data for six different mountains into the Mountain table, providing values for MountainID, MountainName, MountainLongitude, MountainLatitude, MountainElevationFT, and MountainRatings. Adjust the values as needed or add more rows to insert additional mock data.
 
-User
+Prompt:
+
 Working in SQL Server, write me a query to fill this table with mock data:
 
 ```sql
@@ -74,7 +75,6 @@ ChatGPT
 Below is an example SQL query to insert mock data into the WeatherHistory table:
 
 sql
-Copy code
 -- Inserting mock data into WeatherHistory table
 INSERT INTO [dbo].[WeatherHistory] ([WeatherHistoryID], [WeatherHistoryMonth], [WeatherHistoryAvgTemp], [MountainID], [WeatherHistoryAvgPrec])
 VALUES 
@@ -98,13 +98,14 @@ VALUES
 ('18', 'March', '−25°C', '6', '20mm');
 This query inserts mock data into the WeatherHistory table, providing values for WeatherHistoryID, WeatherHistoryMonth, WeatherHistoryAvgTemp, MountainID, and WeatherHistoryAvgPrec. Adjust the values as needed or add more rows to insert additional mock data.
 
-User
+Prompt:
+
 Create a stored procedure from these two tables that shows all details for a mountain that has an average temp of over 0°C
+
 ChatGPT
 You can create a stored procedure in SQL Server that retrieves all details for a mountain with an average temperature above 0°C using a JOIN between the Mountain and WeatherHistory tables. Below is the SQL code to create such a stored procedure:
 
 sql
-Copy code
 CREATE PROCEDURE GetMountainsWithPositiveAvgTemp
 AS
 BEGIN
@@ -120,17 +121,17 @@ This stored procedure is named GetMountainsWithPositiveAvgTemp. It retrieves all
 You can execute this stored procedure using the following SQL command:
 
 sql
-Copy code
 EXEC GetMountainsWithPositiveAvgTemp;
 This will return all details for mountains with an average temperature above 0°C.
 
-User
+Prompt:
+
 I only want the mountain details not weather details 
+
 ChatGPT
 Apologies for the oversight. Here's the revised stored procedure that returns only the details of mountains with an average temperature above 0°C:
 
 sql
-Copy code
 CREATE PROCEDURE GetMountainsWithPositiveAvgTemp
 AS
 BEGIN
@@ -149,10 +150,12 @@ This stored procedure selects all details from the Mountain table where the Moun
 You can execute this stored procedure in the same way:
 
 sql
-Copy code
 EXEC GetMountainsWithPositiveAvgTemp;
-User
+
+Prompt:
+
 Create a stored procedure that gives me all the details for a mountain with an elevation of over 28000 ft
+
 ChatGPT
 Certainly! Here's the stored procedure that retrieves all details for a mountain with an elevation greater than 28,000 feet:
 
@@ -172,7 +175,6 @@ This stored procedure selects all details from the Mountain table where the elev
 You can execute this stored procedure like so:
 
 sql
-Copy code
 EXEC GetMountainsWithHighElevation;
 
 
