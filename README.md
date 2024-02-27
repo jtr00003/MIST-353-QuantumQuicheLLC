@@ -11,12 +11,20 @@ Quantum Quiche LLC has decided to merge together and continue a new idea togethe
 ## James Risso
 
 * Can you make tables out of these names.    
-"Mountain ratings
-Payment 
-User 
-Mountain 
-Weather history 
-Hiking Trails"
+ "Mountain ratings,
+ Payment, 
+ User, 
+ Mountain, 
+ Weather history, 
+ Hiking Trails,"
+
+* Can you fill these tables with mock data
+  "Mountain ratings,
+  Payment, 
+  User, 
+  Mountain, 
+  Weather history, 
+  Hiking Trails,"
 
 
 
