@@ -80,7 +80,7 @@ GO
 
 
 
-REATE TABLE [dbo].[Payment](
+CREATE TABLE [dbo].[Payment](
 	[PaymentID] [int] NOT NULL,
 	[UserID] [int] NULL,
 	[Amount] [money] NOT NULL,
