@@ -6,7 +6,7 @@ Quantum Quiche LLC has decided to merge together and continue a new idea togethe
  
 
 
-# Chat GPT Promp 
+# Chat GPT Prompt 
 
 ## James Risso
 
