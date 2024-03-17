@@ -42,3 +42,5 @@ END;
 
 EXEC GetPaymentDetailsWithUser 3
 GO
+
+test msg
